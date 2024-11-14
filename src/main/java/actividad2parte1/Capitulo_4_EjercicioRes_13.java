@@ -20,12 +20,12 @@ public class Capitulo_4_EjercicioRes_13 {
 
         //Entrada de datos solicitados
         System.out.println("Ingrese el valor de su compra: ");
-        int compra = scanner.nextInt();
+        double compra = scanner.nextDouble();
 
 
         //aplicacion descuentos
         int bolita = (int) (Math.random() * 4);
-        int valor_pagar = compra - ((descuentos[bolita] * compra)/100);
+        double valor_pagar = compra - ((descuentos[bolita] * compra)/100);
 
 
         //Salida del programa

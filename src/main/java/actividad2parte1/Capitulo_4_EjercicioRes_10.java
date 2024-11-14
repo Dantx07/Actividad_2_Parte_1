@@ -26,7 +26,7 @@ public class Capitulo_4_EjercicioRes_10 {
         try (Scanner scanner = new Scanner(System.in))   {
             for (String dat: solicitud)     {
                 System.out.println("Ingrese su " + dat);
-                var dato = scanner.nextLine();
+                Object dato = scanner.nextLine();
                 datos.add(dato);
             }
         }

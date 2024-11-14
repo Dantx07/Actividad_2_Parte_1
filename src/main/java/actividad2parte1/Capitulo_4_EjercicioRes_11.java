@@ -17,19 +17,19 @@ public class Capitulo_4_EjercicioRes_11 {
 
 
         //Crea una lista con los datos que utilizaremos
-        ArrayList<Integer> valor = new ArrayList<>();
+        ArrayList<Double> valor = new ArrayList<>();
 
 
         //Entrada de datos con los que trabajaremos
         for (int k = 1; k < 4; k++)     {
             System.out.println("Ingrese el Numero " + k + ": ");
-            int numero = scanner.nextInt();
+            double numero = scanner.nextDouble();
             valor.add(numero);
         }
 
 
         //Identificamos el numero mayor
-        int mayor = 0;
+        double mayor = 0;
         if (valor.getFirst() > valor.get(1) && valor.getFirst() > valor.get(2))     {
             mayor = valor.getFirst();
         }   else if (valor.get(1) > valor.get(0) && valor.get(1) > valor.get(2)) {

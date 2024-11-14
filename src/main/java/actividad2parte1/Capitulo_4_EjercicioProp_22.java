@@ -54,7 +54,7 @@ public class Capitulo_4_EjercicioProp_22 {
         int k = 0;
         for (Object sali: salida)   {
             System.out.println(salidas[k] + sali);
-            k = k + 1;
+            k += 1;
         }
         
         

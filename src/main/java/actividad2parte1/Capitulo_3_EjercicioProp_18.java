@@ -12,7 +12,7 @@ public class Capitulo_3_EjercicioProp_18 {
         
         
         //Lista de frases para la salida
-        String[] salida = {"Su codigo: ", "Su nombre completo: ",
+        String[] salida = {"Su codigo de empleado: ", "Su nombre completo: ",
                 "Su salario bruto: ",
                 "Su salario neto: "};
 
@@ -36,29 +36,29 @@ public class Capitulo_3_EjercicioProp_18 {
         try (Scanner scanner = new  Scanner(System.in)) {
             for (String daat : dat) {
                 System.out.println(("Ingrese " + daat));
-                var dato = scanner.nextLine();
+                Object dato = scanner.nextLine();
                 datos.add(dato);
             }
         }
 
 
         //Datos finales del ejercicio
-        var codigo = datos.get(0);
+        String codigo = datos.get(0).toString();
         imprimir.add(codigo);
-        var nombre = datos.get(1);
+        String nombre = datos.get(1).toString();
         imprimir.add(nombre);
-        var salario_bruto = Double.parseDouble(datos.get(2).toString()) * Double.parseDouble(datos.get(3).toString());
+        double salario_bruto = Double.parseDouble(datos.get(2).toString()) * Double.parseDouble(datos.get(3).toString());
         imprimir.add(salario_bruto);
-        var retencion = salario_bruto * (Double.parseDouble(datos.get(4).toString())/100);
-        var salario_neto = salario_bruto - retencion;
+        double retencion = salario_bruto * (Double.parseDouble(datos.get(4).toString())/100);
+        double salario_neto = salario_bruto - retencion;
         imprimir.add(salario_neto);
 
 
         //Imprimir datos
-        var i = 0;
+        int i = 0;
         for (Object impr: imprimir) {
             System.out.println(salida[i] + impr);
-            i = i+1;
+            i += 1;
         }
 
 

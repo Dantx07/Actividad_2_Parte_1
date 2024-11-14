@@ -16,9 +16,9 @@ public class Capitulo_4_EjercicioRes_7 {
 
         //Entrada de los datos requeridos
         System.out.println("Ingrese el numero A: ");
-        int a = scanner.nextInt();
+        double a = scanner.nextDouble();
         System.out.println("Ingrese el numero B: ");
-        int b = scanner.nextInt();
+        double b = scanner.nextDouble();
 
 
         //Verifica los numeros

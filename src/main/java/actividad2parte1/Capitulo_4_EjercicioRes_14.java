@@ -60,9 +60,11 @@ public class Capitulo_4_EjercicioRes_14 {
         int k = 1;
         for (double sa: salarios) {
             System.out.println("Salario vendedores Departamento " + k + ": " + sa);
-            k = k + 1;
+            k += 1;
         }
         
         
     }
+    
+    
 }

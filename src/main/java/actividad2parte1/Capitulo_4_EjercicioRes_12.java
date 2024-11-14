@@ -32,7 +32,7 @@ public class Capitulo_4_EjercicioRes_12 {
 
 
         //verificar horas de trabajo
-        double pago = 0;
+        double pago;
         double valor = Double.parseDouble(datos.get(2).toString());
         double horas = Double.parseDouble(datos.get(1).toString());
         if (horas > 40)  {

@@ -12,14 +12,14 @@ public class Capitulo_3_EjercicioProp_21 {
         
         
         //Lista de lados
-        ArrayList<Integer> lados = new ArrayList<>();
+        ArrayList<Double> lados = new ArrayList<>();
 
 
         //Entrada de los datos con los que trabajaremos
         try (Scanner scanner = new  Scanner(System.in)) {
             for (int k = 1; k < 4; k++) {
                 System.out.println(("Ingrese el lado " + k + ": "));
-                var lado = scanner.nextInt();
+                double lado = scanner.nextInt();
                 lados.add(lado);
             }
 
